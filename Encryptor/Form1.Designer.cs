@@ -30,18 +30,17 @@ namespace Encryptor
         private void InitializeComponent()
         {
             this.CreateDocument = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Encrypted = new System.Windows.Forms.CheckBox();
+            this.ContentDocument = new System.Windows.Forms.TextBox();
+            this.DocumentNameBox = new System.Windows.Forms.TextBox();
             this.TextBox = new System.Windows.Forms.Label();
-            this.DocumentName = new System.Windows.Forms.Label();
+            this.DocumentNameLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // CreateDocument
             // 
-            this.CreateDocument.Location = new System.Drawing.Point(148, 356);
+            this.CreateDocument.Location = new System.Drawing.Point(306, 339);
             this.CreateDocument.Name = "CreateDocument";
             this.CreateDocument.Size = new System.Drawing.Size(153, 62);
             this.CreateDocument.TabIndex = 0;
@@ -49,65 +48,60 @@ namespace Encryptor
             this.CreateDocument.UseVisualStyleBackColor = true;
             this.CreateDocument.Click += new System.EventHandler(this.CreateDocument_Click);
             // 
-            // checkBox1
+            // Encrypted
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(148, 328);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(83, 19);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.Encrypted.AutoSize = true;
+            this.Encrypted.Location = new System.Drawing.Point(150, 304);
+            this.Encrypted.Name = "Encrypted";
+            this.Encrypted.Size = new System.Drawing.Size(79, 19);
+            this.Encrypted.TabIndex = 1;
+            this.Encrypted.Text = "Encrypted";
+            this.Encrypted.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // ContentDocument
             // 
-            this.textBox1.Location = new System.Drawing.Point(148, 176);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(473, 137);
-            this.textBox1.TabIndex = 2;
+            this.ContentDocument.Location = new System.Drawing.Point(146, 150);
+            this.ContentDocument.Multiline = true;
+            this.ContentDocument.Name = "ContentDocument";
+            this.ContentDocument.Size = new System.Drawing.Size(473, 137);
+            this.ContentDocument.TabIndex = 2;
             // 
-            // textBox2
+            // DocumentNameBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(148, 58);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(473, 23);
-            this.textBox2.TabIndex = 3;
+            this.DocumentNameBox.Location = new System.Drawing.Point(146, 91);
+            this.DocumentNameBox.Name = "DocumentNameBox";
+            this.DocumentNameBox.Size = new System.Drawing.Size(473, 23);
+            this.DocumentNameBox.TabIndex = 3;
             // 
             // TextBox
             // 
             this.TextBox.AutoSize = true;
-            this.TextBox.Location = new System.Drawing.Point(148, 155);
+            this.TextBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TextBox.Location = new System.Drawing.Point(141, 126);
             this.TextBox.Name = "TextBox";
-            this.TextBox.Size = new System.Drawing.Size(28, 15);
+            this.TextBox.Size = new System.Drawing.Size(36, 21);
             this.TextBox.TabIndex = 4;
             this.TextBox.Text = "Text";
             // 
             // DocumentName
             // 
-            this.DocumentName.AutoSize = true;
-            this.DocumentName.Location = new System.Drawing.Point(148, 40);
-            this.DocumentName.Name = "DocumentName";
-            this.DocumentName.Size = new System.Drawing.Size(98, 15);
-            this.DocumentName.TabIndex = 5;
-            this.DocumentName.Text = "Document Name";
+            this.DocumentNameLabel.AutoSize = true;
+            this.DocumentNameLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DocumentNameLabel.Location = new System.Drawing.Point(141, 63);
+            this.DocumentNameLabel.Name = "DocumentName";
+            this.DocumentNameLabel.Size = new System.Drawing.Size(128, 21);
+            this.DocumentNameLabel.TabIndex = 5;
+            this.DocumentNameLabel.Text = "Document Name";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(148, 95);
+            this.label1.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(140, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 15);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Document Name";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(148, 113);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(473, 23);
-            this.textBox3.TabIndex = 6;
+            this.label1.Size = new System.Drawing.Size(129, 29);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Encryptor";
             // 
             // Form1
             // 
@@ -115,12 +109,11 @@ namespace Encryptor
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.DocumentName);
+            this.Controls.Add(this.DocumentNameLabel);
             this.Controls.Add(this.TextBox);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.DocumentNameBox);
+            this.Controls.Add(this.ContentDocument);
+            this.Controls.Add(this.Encrypted);
             this.Controls.Add(this.CreateDocument);
             this.Name = "Form1";
             this.Text = "Encryptor";
@@ -132,13 +125,12 @@ namespace Encryptor
         #endregion
 
         private System.Windows.Forms.Button CreateDocument;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.CheckBox Encrypted;
+        private System.Windows.Forms.TextBox ContentDocument;
+        private System.Windows.Forms.TextBox DocumentNameBox;
         private System.Windows.Forms.Label TextBox;
-        private System.Windows.Forms.Label DocumentName;
+        private System.Windows.Forms.Label DocumentNameLabel;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
     }
 }
 
