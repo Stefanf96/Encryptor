@@ -8,19 +8,19 @@
     "net5.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Stefan\\.nuget\\packages\\": {}
+    "C:\\Users\\stefa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repos\\Encryptor\\Encryptor\\Encryptor.csproj",
+      "projectUniqueName": "D:\\Documenten\\Visual Studio\\Projects\\Encryptor\\Encryptor\\Encryptor.csproj",
       "projectName": "Encryptor",
-      "projectPath": "D:\\Repos\\Encryptor\\Encryptor\\Encryptor.csproj",
-      "packagesPath": "C:\\Users\\Stefan\\.nuget\\packages\\",
-      "outputPath": "D:\\Repos\\Encryptor\\Encryptor\\obj\\",
+      "projectPath": "D:\\Documenten\\Visual Studio\\Projects\\Encryptor\\Encryptor\\Encryptor.csproj",
+      "packagesPath": "C:\\Users\\stefa\\.nuget\\packages\\",
+      "outputPath": "D:\\Documenten\\Visual Studio\\Projects\\Encryptor\\Encryptor\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Stefan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\stefa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

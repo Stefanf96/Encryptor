@@ -16,3 +16,21 @@ D:\Repos\Encryptor\Encryptor\obj\Debug\net5.0-windows\Encryptor.dll
 D:\Repos\Encryptor\Encryptor\obj\Debug\net5.0-windows\ref\Encryptor.dll
 D:\Repos\Encryptor\Encryptor\obj\Debug\net5.0-windows\Encryptor.pdb
 D:\Repos\Encryptor\Encryptor\obj\Debug\net5.0-windows\Encryptor.genruntimeconfig.cache
+D:\Documenten\Visual Studio\Projects\Encryptor\Encryptor\obj\Debug\net5.0-windows\Encryptor.csproj.AssemblyReference.cache
+D:\Documenten\Visual Studio\Projects\Encryptor\Encryptor\obj\Debug\net5.0-windows\Encryptor.Form1.resources
+D:\Documenten\Visual Studio\Projects\Encryptor\Encryptor\obj\Debug\net5.0-windows\Encryptor.csproj.GenerateResource.cache
+D:\Documenten\Visual Studio\Projects\Encryptor\Encryptor\obj\Debug\net5.0-windows\Encryptor.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documenten\Visual Studio\Projects\Encryptor\Encryptor\obj\Debug\net5.0-windows\Encryptor.AssemblyInfoInputs.cache
+D:\Documenten\Visual Studio\Projects\Encryptor\Encryptor\obj\Debug\net5.0-windows\Encryptor.AssemblyInfo.cs
+D:\Documenten\Visual Studio\Projects\Encryptor\Encryptor\obj\Debug\net5.0-windows\Encryptor.csproj.CoreCompileInputs.cache
+D:\Documenten\Visual Studio\Projects\Encryptor\Encryptor\obj\Debug\net5.0-windows\Encryptor.dll
+D:\Documenten\Visual Studio\Projects\Encryptor\Encryptor\obj\Debug\net5.0-windows\ref\Encryptor.dll
+D:\Documenten\Visual Studio\Projects\Encryptor\Encryptor\obj\Debug\net5.0-windows\Encryptor.pdb
+D:\Documenten\Visual Studio\Projects\Encryptor\Encryptor\bin\Debug\net5.0-windows\Encryptor.exe
+D:\Documenten\Visual Studio\Projects\Encryptor\Encryptor\bin\Debug\net5.0-windows\Encryptor.deps.json
+D:\Documenten\Visual Studio\Projects\Encryptor\Encryptor\bin\Debug\net5.0-windows\Encryptor.runtimeconfig.json
+D:\Documenten\Visual Studio\Projects\Encryptor\Encryptor\bin\Debug\net5.0-windows\Encryptor.runtimeconfig.dev.json
+D:\Documenten\Visual Studio\Projects\Encryptor\Encryptor\bin\Debug\net5.0-windows\Encryptor.dll
+D:\Documenten\Visual Studio\Projects\Encryptor\Encryptor\bin\Debug\net5.0-windows\ref\Encryptor.dll
+D:\Documenten\Visual Studio\Projects\Encryptor\Encryptor\bin\Debug\net5.0-windows\Encryptor.pdb
+D:\Documenten\Visual Studio\Projects\Encryptor\Encryptor\obj\Debug\net5.0-windows\Encryptor.genruntimeconfig.cache
