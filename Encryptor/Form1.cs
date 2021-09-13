@@ -15,10 +15,8 @@ namespace Encryptor
 {
     public partial class Form1 : Form
     {
-        private bool IsEncrypted;
-        private string SaveLocation = @"D:\Documenten\Visual Studio\Test Files\";
-        private string dataType = ".txt";
-
+        private bool isEncrypted;
+        private string saveLocation = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
         private static string documentName;
         private static string documentContent;
 
@@ -30,27 +28,23 @@ namespace Encryptor
         private void OpenDocument_Click(object sender, EventArgs e)
         {
             OpenFileDialog fileDialog = new OpenFileDialog();
-            fileDialog.InitialDirectory = SaveLocation;
+            fileDialog.InitialDirectory = saveLocation;
             if (fileDialog.ShowDialog() == DialogResult.OK)
             {
                 Encryption.DecryptFile(fileDialog.FileName);
             }
         }
 
-        private void CreateDocument_Click(object sender, EventArgs e)
+        private void SaveDocument_Click(object sender, EventArgs e)
         {
-            documentName = DocumentNameBox.Text;
-            IsEncrypted = Encrypted.Checked;
-            if (IsEncrypted)
-            {
-                documentContent = Encryption.Encrypt(ContentDocument.Text);
-            }
-            else
-            {
-                documentContent = ContentDocument.Text;
-            }
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.FileName = DocumentNameBox.Text;
+            saveFileDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
 
-            Encryption.TextCreator(SaveLocation, documentName, dataType, documentContent);
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                Encryption.SaveFile(saveFileDialog.FileName, ContentDocument.Text, Encrypted.Checked);
+            }
         }
     }
 }

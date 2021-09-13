@@ -17,15 +17,29 @@ namespace Encryptor
     {
         private static readonly string securityKey = @"sblw-3hn8-sqoy19";
 
-        public static void TextCreator(string savelocation, string filename, string datatype, string content)
+        public static void SaveFile(string savelocation, string content, bool isEncrypted)
         {
             try
             {
-                string fullPath = savelocation + filename + datatype;
+                content = (isEncrypted == true) ? Encrypt(content) : content;
+                File.WriteAllText(savelocation, content);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Exception: " + e.Message);
+            }
+        }
+
+        public static void DecryptFile(string fullPath)
+        {
+            try
+            {
+                string text = File.ReadAllText(fullPath);
+                string decryptedContent = Decrypt(text);
                 using (StreamWriter writer = new StreamWriter(fullPath))
                 {
                     // Add some text to file
-                    writer.WriteLine(content);
+                    writer.WriteLine(decryptedContent);
                 }
                 if (File.Exists(fullPath))
                 {
@@ -43,34 +57,7 @@ namespace Encryptor
             }
         }
 
-        public static void DecryptFile(string fullpath)
-        {
-            try
-            {
-                string text = File.ReadAllText(fullpath);
-                string decryptedContent = Encryption.Decrypt(text);
-                using (StreamWriter writer = new StreamWriter(fullpath))
-                {
-                    // Add some text to file
-                    writer.WriteLine(decryptedContent);
-                }
-                if (File.Exists(fullpath))
-                {
-                    var process = Process.Start("notepad.exe", fullpath);
-                    process.WaitForInputIdle();
-                    var handle = process.MainWindowHandle;
-
-                    // if the window is still in the foreground
-                    SendKeys.SendWait("^(s)"); // Ctrl+S
-                }
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show("Exception: " + e.Message);
-            }
-        }
-
-        public static string Encrypt(string input)
+        private static string Encrypt(string input)
         {
             byte[] inputArray = UTF8Encoding.UTF8.GetBytes(input);
             TripleDESCryptoServiceProvider tripleDES = new TripleDESCryptoServiceProvider();
@@ -83,9 +70,9 @@ namespace Encryptor
             return Convert.ToBase64String(resultArray, 0, resultArray.Length);
         }
 
-        public static string Decrypt(string textInput)
+        private static string Decrypt(string input)
         {
-            byte[] inputArray = Convert.FromBase64String(textInput);
+            byte[] inputArray = Convert.FromBase64String(input);
             var TripleDESCryptoService = new TripleDESCryptoServiceProvider();
             TripleDESCryptoService.Key = UTF8Encoding.UTF8.GetBytes(securityKey);
             TripleDESCryptoService.Mode = CipherMode.ECB;

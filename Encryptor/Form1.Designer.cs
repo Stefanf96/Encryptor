@@ -29,7 +29,7 @@ namespace Encryptor
         /// </summary>
         private void InitializeComponent()
         {
-            this.CreateDocument = new System.Windows.Forms.Button();
+            this.SaveDocument = new System.Windows.Forms.Button();
             this.Encrypted = new System.Windows.Forms.CheckBox();
             this.ContentDocument = new System.Windows.Forms.TextBox();
             this.DocumentNameBox = new System.Windows.Forms.TextBox();
@@ -37,18 +37,19 @@ namespace Encryptor
             this.DocumentNameLabel = new System.Windows.Forms.Label();
             this.Title = new System.Windows.Forms.Label();
             this.OpenDocument = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.SuspendLayout();
             // 
             // CreateDocument
             // 
-            this.CreateDocument.Location = new System.Drawing.Point(232, 452);
-            this.CreateDocument.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.CreateDocument.Name = "CreateDocument";
-            this.CreateDocument.Size = new System.Drawing.Size(175, 83);
-            this.CreateDocument.TabIndex = 0;
-            this.CreateDocument.Text = "Create Document";
-            this.CreateDocument.UseVisualStyleBackColor = true;
-            this.CreateDocument.Click += new System.EventHandler(this.CreateDocument_Click);
+            this.SaveDocument.Location = new System.Drawing.Point(232, 452);
+            this.SaveDocument.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.SaveDocument.Name = "SaveDocument";
+            this.SaveDocument.Size = new System.Drawing.Size(175, 83);
+            this.SaveDocument.TabIndex = 0;
+            this.SaveDocument.Text = "Create Document";
+            this.SaveDocument.UseVisualStyleBackColor = true;
+            this.SaveDocument.Click += new System.EventHandler(this.SaveDocument_Click);
             // 
             // Encrypted
             // 
@@ -132,7 +133,7 @@ namespace Encryptor
             this.Controls.Add(this.DocumentNameBox);
             this.Controls.Add(this.ContentDocument);
             this.Controls.Add(this.Encrypted);
-            this.Controls.Add(this.CreateDocument);
+            this.Controls.Add(this.SaveDocument);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "Encryptor";
@@ -143,7 +144,7 @@ namespace Encryptor
 
         #endregion
 
-        private System.Windows.Forms.Button CreateDocument;
+        private System.Windows.Forms.Button SaveDocument;
         private System.Windows.Forms.CheckBox Encrypted;
         private System.Windows.Forms.TextBox ContentDocument;
         private System.Windows.Forms.TextBox DocumentNameBox;
@@ -151,6 +152,7 @@ namespace Encryptor
         private System.Windows.Forms.Label DocumentNameLabel;
         private System.Windows.Forms.Label Title;
         private System.Windows.Forms.Button OpenDocument;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 
